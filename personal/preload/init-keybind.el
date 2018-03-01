@@ -5,7 +5,7 @@
 
 (require 'helm-config)
 ;;; Code:
-(global-set-key (kbd "C-c e") 'helm-fasd)
+(global-set-key (kbd "C-c C-f") 'helm-fasd)
 (global-set-key (kbd "C-c h o") 'helm-occur)
 (global-set-key (kbd "C-<f12>") 'helm-ls-git-ls)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
@@ -42,12 +42,16 @@
 
 ;;; Buffer
 ;; Switch buffer
-(global-set-key (kbd "M-s M-s") 'mode-line-other-buffer)
+(global-set-key (kbd "M-q") 'mode-line-other-buffer)
 (global-set-key (kbd "<M-left>") 'previous-buffer)
 (global-set-key (kbd "<M-right>") 'next-buffer)
 
 ;; git
 (global-set-key (kbd "C-x v p") 'git-messenger:popup-message)
+
+;; C-mode
+(global-set-key (kbd "M-p") 'c-up-conditional-with-else)
+(global-set-key (kbd "M-n") 'c-down-conditional-with-else)
 
 (provide 'init-keybind)
 ;;; keybind.el ends here

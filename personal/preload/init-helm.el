@@ -21,9 +21,8 @@
 
 (setq helm-swoop-split-direction 'split-window-horizontally)
 
-
 ;;(load "~/.emacs.d/usr/func/helm-fasd.el")
-(require 'init-helm-fasd)
+;;(require 'init-helm-fasd)
 
 ;; Enable helm-gtags-mode
 (add-hook 'c-mode-hook 'helm-gtags-mode)
